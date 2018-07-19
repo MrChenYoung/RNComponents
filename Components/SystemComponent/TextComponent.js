@@ -45,6 +45,13 @@ export default class TestComponent extends Component{
       >
         测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本
       </Text>
+      <Text style={{fontSize:16,color:'blue'}}>
+        Hello world!
+        <Text>
+          {/*内层继承外层样式*/}
+          Inner text!
+        </Text>
+      </Text>
     </View>
   }
 }
@@ -65,6 +72,5 @@ const styles = StyleSheet.create({
     // ('normal', 'bold', '100', '200', '300', '400', '500', '600', '700', '800', '900')
     fontWeight:'900',
     lineHeight:20,
-
-  }
+  },
 })

@@ -31,6 +31,8 @@ export default class TestComponent extends Component{
         onMagicTap={()=>{
           
         }}
+
+
       />
     </View>
   }
@@ -45,7 +47,21 @@ const styles = StyleSheet.create({
   innerStyle:{
     width:150,
     height:100,
-    backgroundColor:'blue'
+    backgroundColor:'blue',
+    borderColor:'red',
+    borderWidth:5,
+    // 边框线的风格,这个和CSS样式一样的enum('solid', 'dotted', 'dashed')
+    borderStyle:'dashed',
+    // 透明度
+    opacity:0.8,
+    // 设置内容超过容器显示还是隐藏enum('visible', 'hidden')
+    overflow:'visible',
+    // 高度，设置Z轴，可以产生立体效果
+    elevation:100,
+    borderTopLeftRadius:5,
+    borderTopRightRadius:10,
+    borderBottomLeftRadius:20,
+    borderBottomRightRadius:30
   }
 
 })
