@@ -88,7 +88,7 @@ export default class ProgressBarComponent extends Component{
     let progress = 0.1;
     if (model === 'Horizontal'){
       indeter = false;
-      progress = 0.8;
+      progress = 0.5;
     }else if (model === 'Large'){
       progress = 0.2;
     }
@@ -103,10 +103,10 @@ export default class ProgressBarComponent extends Component{
       color={this.state.progressColor}
 
       // 决定进度条是否要显示一个不确定的进度。注意这个在styleAttr是Horizontal的时候必须是false
-      // indeterminate={indeter}
+      indeterminate={indeter}
 
       // 当前的进度值（在0到1之间）
-      // progress={progress}
+      progress={progress}
     />
   }
 }

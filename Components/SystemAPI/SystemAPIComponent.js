@@ -12,7 +12,9 @@ const datas = [
     data:[
       {title:'Alert'},
       {title:'Animated'},
-      {title:'AppState'}
+      {title:'AppState'},
+      {title:'AsyncStorage'},
+      {title:'NetInfo'}
     ]
   },
   {
@@ -23,6 +25,14 @@ const datas = [
       {title:'ActionSheetIOS'},
       {title:'AlertIOS'},
       {title:'ImagePickerIOSAPI'}
+    ]
+  },
+  {
+    key:'Android专用',
+    platform:'Android',
+    usability:Platform.OS === 'android',
+    data:[
+      {title:'ToastAndroid'}
     ]
   }
 ];
@@ -70,6 +80,15 @@ export default class SystemAPI extends Component{
         break;
       case 'AppState':
         component = 'AppStatePage';
+        break;
+      case 'ToastAndroid':
+        component = 'ToastAndroidPage';
+        break;
+      case 'NetInfo':
+        component = 'NetInfoPage';
+        break;
+      case 'AsyncStorage':
+        component = 'AsyncStoragePage';
         break;
     }
 

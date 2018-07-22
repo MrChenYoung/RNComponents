@@ -45,6 +45,9 @@ import ToolbarAndroidComponent from '../SystemComponent/ToolbarAndroidComponent'
 import ViewComponent from '../SystemComponent/ViewComponent';
 import ViewPagerAndroidComponent from '../SystemComponent/ViewPagerAndroidComponent';
 import WebViewComponent from '../SystemComponent/WebViewComponent';
+import ClipboardComponent from '../SystemComponent/ClipboardComponent';
+import DatePickerAndroidComponent from '../SystemComponent/DatePickerAndroidComponent';
+import TimePickerAndroidComponent from '../SystemComponent/TimePickerAndroidComponent';
 
 
 // 系统API
@@ -54,6 +57,9 @@ import AlertIOSAPI from '../SystemAPI/AlertIOSAPI';
 import AlertAPI from '../SystemAPI/AlertAPI';
 import AnimatedAPI from '../SystemAPI/AnimatedAPI';
 import AppStateAPI from '../SystemAPI/AppStateAPI';
+import ToastAndroidAPI from '../SystemAPI/ToastAndroidAPI';
+import NetInfoAPI from '../SystemAPI/NetInfoAPI';
+import AsyncStorageAPI  from '../SystemAPI/AsyncStorageAPI';
 
 // 系统库
 import MyStackNavigator from '../SystemLibrary/MyStackNavigator';
@@ -152,7 +158,7 @@ const TabBarRouteConfig = {
 }
 
 const TabBarNavigatorConfig = {
-  initialRouteName:'ThreeThirdComponent',
+  initialRouteName:'SystemAPI',
   swipeEnabled:true,
   tabBarComponent:TabBarBottom,
   tabBarPosition:'bottom',
@@ -434,6 +440,42 @@ const StackNavigatorRouteConfig = {
     screen:VectorIconsComponent,
     navigationOptions:{
       headerTitle:'react-native-vector-icons'
+    }
+  },
+  ClipboardPage:{
+    screen:ClipboardComponent,
+    navigationOptions:{
+      headerTitle:'Clipboard'
+    }
+  },
+  DatePickerAndroidPage:{
+    screen:DatePickerAndroidComponent,
+    navigationOptions:{
+      headerTitle:'DatePickerAndroid'
+    }
+  },
+  TimePickerAndroidPage:{
+    screen:TimePickerAndroidComponent,
+    navigationOptions:{
+      headerTitle:'TimePickerAndroid'
+    }
+  },
+  ToastAndroidPage:{
+    screen:ToastAndroidAPI,
+    navigationOptions:{
+      headerTitle:'ToastAndroid'
+    }
+  },
+  NetInfoPage:{
+    screen:NetInfoAPI,
+    navigationOptions:{
+      headerTitle:'NetInfo'
+    }
+  },
+  AsyncStoragePage:{
+    screen:AsyncStorageAPI,
+    navigationOptions:{
+      headerTitle:'AsyncStorage'
     }
   }
 }

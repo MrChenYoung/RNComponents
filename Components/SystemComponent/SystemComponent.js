@@ -23,6 +23,7 @@ const datas = [
     data:[
       {title:'ActivityIndicator'},
       {title:'Button'},
+      {title:'Clipboard'},
       {title:'FlatList'},
       {title:'Image'},
       {title:'KeyboardAvoidingView'},
@@ -62,7 +63,9 @@ const datas = [
     data:[
       {title:'CheckBox'},
       {title:'DrawerLayoutAndroid'},
+      {title:'DatePickerAndroid'},
       {title:'ProgressBarAndroid'},
+      {title:'TimePickerAndroid'},
       {title:'ToolbarAndroid'},
       {title:'ViewPagerAndroid'}
     ]
@@ -183,6 +186,15 @@ export default class SystemComponent extends Component{
         break;
       case 'WebView':
         component = 'WebViewPage';
+        break;
+      case 'Clipboard':
+        component = 'ClipboardPage';
+        break;
+      case 'DatePickerAndroid':
+        component = 'DatePickerAndroidPage';
+        break;
+      case 'TimePickerAndroid':
+        component = 'TimePickerAndroidPage';
         break;
     }
 
