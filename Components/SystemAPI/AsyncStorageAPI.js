@@ -103,6 +103,15 @@ export default class AsynsStorageComponent extends Component{
         }}
       />
       <HYButton
+        title={'批量修改'}
+        extendStyle={{alignSelf:'center', marginTop: 20}}
+        width={Utility.screenWidth - 20}
+        enabled={this.state.removeItemEnable}
+        onPress={()=>{
+          this.multiChange()
+        }}
+      />
+      <HYButton
         title={'批量合并'}
         extendStyle={{alignSelf:'center', marginTop: 20}}
         width={Utility.screenWidth - 20}
@@ -262,11 +271,30 @@ export default class AsynsStorageComponent extends Component{
     })
   }
 
+  // 批量修改
+  async multiChange(){
+    let value = await AsyncStorage.multiSet([
+      ['张三',',是一名三好学生'],
+      ['李四',',是一名优秀的军人hhh']
+    ],(errors)=>{
+      if (!errors){
+        // 批量合并成功
+        this.getStorageData();
+      } else {
+        // 批量合并失败
+        for (let i = 0; i < errors.length; i++) {
+          let error = errors[i];
+          alert('批量修改失败'+error.message);
+        }
+      }
+    })
+  }
+
   // 批量合并
   async multiMerger(){
     let value = await AsyncStorage.multiMerger([
-      {key:'张三',value:',是一名三好学生'},
-      {key:'李四',value:',是一名优秀的军人hhh'}
+      ['张三',',是一名三好学生'],
+      ['李四',',是一名优秀的军人hhh']
       ],(errors)=>{
       if (!errors){
         // 批量合并成功
