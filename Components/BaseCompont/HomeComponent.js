@@ -60,6 +60,13 @@ import AppStateAPI from '../SystemAPI/AppStateAPI';
 import ToastAndroidAPI from '../SystemAPI/ToastAndroidAPI';
 import NetInfoAPI from '../SystemAPI/NetInfoAPI';
 import AsyncStorageAPI  from '../SystemAPI/AsyncStorageAPI';
+import DimensionsAPI from '../SystemAPI/DimensionsAPI';
+import BackAndroidAPI from '../SystemAPI/BackAndroidAPI';
+import StyleSheetAPI from '../SystemAPI/StyleSheetAPI';
+import PixelRatioAPI from '../SystemAPI/PixelRatioAPI';
+import VibrationAPI from '../SystemAPI/VibrationAPI';
+import LinkingAPI from '../SystemAPI/LinkingAPI';
+import LayoutAnimationAPI from '../SystemAPI/LayoutAnimationAPI';
 
 // 系统库
 import MyStackNavigator from '../SystemLibrary/MyStackNavigator';
@@ -476,6 +483,48 @@ const StackNavigatorRouteConfig = {
     screen:AsyncStorageAPI,
     navigationOptions:{
       headerTitle:'AsyncStorage'
+    }
+  },
+  DimensionsPage:{
+    screen:DimensionsAPI,
+    navigationOptions:{
+      headerTitle:'Dimensions'
+    }
+  },
+  BackAndroidPage:{
+    screen:BackAndroidAPI,
+    navigationOptions:{
+      headerTitle:'BackAndroid'
+    }
+  },
+  StyleSheetPage:{
+    screen:StyleSheetAPI,
+    navigationOptions:{
+      headerTitle:'StyleSheet'
+    }
+  },
+  PixelRatioPage:{
+    screen:PixelRatioAPI,
+    navigationOptions:{
+      headerTitle:'PixelRatio'
+    }
+  },
+  VibrationPage:{
+    screen:VibrationAPI,
+    navigationOptions:{
+      headerTitle:'Vibration'
+    }
+  },
+  LinkingPage:{
+    screen:LinkingAPI,
+    navigationOptions:{
+      headerTitle:'Linking'
+    }
+  },
+  LayoutAnimationPage:{
+    screen:LayoutAnimationAPI,
+    navigationOptions:{
+      headerTitle:'LayoutAnimation'
     }
   }
 }

@@ -53,7 +53,20 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>mqq</string>
+		<string>weixin</string>
+		<string>weibo</string>
+		<string>tencentweibo</string>
+		<string>taobao</string>
+		<string>alipay</string>
+		<string>imeituan</string>
+		<string>zhihu</string>
+		<string>youku</string>
+		<string>myApp</string>
+	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>

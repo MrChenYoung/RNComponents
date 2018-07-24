@@ -273,6 +273,9 @@ export default class AsynsStorageComponent extends Component{
 
   // 批量修改
   async multiChange(){
+    // multiSet和multiMerge都接受一个与multiGet输出值一致的key-value数组的数组。返回一个Promise对象。
+
+    // multiSet([['k1', 'val1'], ['k2', 'val2']], cb);
     let value = await AsyncStorage.multiSet([
       ['张三',',是一名三好学生'],
       ['李四',',是一名优秀的军人hhh']
@@ -292,6 +295,9 @@ export default class AsynsStorageComponent extends Component{
 
   // 批量合并
   async multiMerger(){
+    // 将多个输入的值和已有的值合并，要求都是字符串化的JSON。返回一个Promise对象。
+    //
+    // 还没有被所有原生实现都支持
     let value = await AsyncStorage.multiMerger([
       ['张三',',是一名三好学生'],
       ['李四',',是一名优秀的军人hhh']

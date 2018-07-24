@@ -57,6 +57,11 @@ export default class TestComponent extends Component{
 
   // 显示带输入框的alertView
   showPromptAlertIOS(){
+    // 参数1: 标题
+    // 参数2: 提示信息
+    // 参数3： 按钮数组
+    // 参数4： type:string-进行设置输入框的类型配置可选值有'default','login-password',plain-text','secure-text'
+    // 参数5: defaultValue:string  该为需要输入信息的默认值(textfield)
     AlertIOS.prompt('提示','输入文字',[{text:'取消',onPress: ()=> {
         this.setState({
           alertSelectBtnText:'取消',
@@ -67,7 +72,8 @@ export default class TestComponent extends Component{
           alertSelectBtnText:'确定',
           alertInputText:inputText
         })
-      }}])
+      }}],
+      'login-password')
   }
 
   // 获取按钮

@@ -14,7 +14,13 @@ const datas = [
       {title:'Animated'},
       {title:'AppState'},
       {title:'AsyncStorage'},
-      {title:'NetInfo'}
+      {title:'Dimensions'},
+      {title:'Linking'},
+      {title:'LayoutAnimation'},
+      {title:'NetInfo'},
+      {title:'PixelRatio'},
+      {title:'StyleSheet'},
+      {title:'Vibration'}
     ]
   },
   {
@@ -24,6 +30,7 @@ const datas = [
     data:[
       {title:'ActionSheetIOS'},
       {title:'AlertIOS'},
+      {title:'AppStateIOS'},
       {title:'ImagePickerIOSAPI'}
     ]
   },
@@ -32,6 +39,7 @@ const datas = [
     platform:'Android',
     usability:Platform.OS === 'android',
     data:[
+      {title:'BackAndroid'},
       {title:'ToastAndroid'}
     ]
   }
@@ -89,6 +97,30 @@ export default class SystemAPI extends Component{
         break;
       case 'AsyncStorage':
         component = 'AsyncStoragePage';
+        break;
+      case 'Dimensions':
+        component = 'DimensionsPage';
+        break;
+      case 'BackAndroid':
+        component = 'BackAndroidPage';
+        break;
+      case 'StyleSheet':
+        component = 'StyleSheetPage';
+        break;
+      case 'PixelRatio':
+        component = 'PixelRatioPage';
+        break;
+      case 'AppStateIOS':
+        component = 'AppStateIOSPage';
+        break;
+      case 'Vibration':
+        component = 'VibrationPage';
+        break;
+      case 'Linking':
+        component = 'LinkingPage';
+        break;
+      case 'LayoutAnimation':
+        component = 'LayoutAnimationPage';
         break;
     }
 

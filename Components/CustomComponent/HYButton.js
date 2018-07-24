@@ -67,7 +67,7 @@ export default class HYButton extends Component{
             [
               {color:this.props.titleColor},
               {fontSize:this.props.fontSize},
-              {opacity:0.8},
+              // {opacity:0.8},
               this.props.enabled ? {} : {color:'gray'}
             ]
           }

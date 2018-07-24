@@ -48,6 +48,7 @@
 		FF1C506F20FD8B7D0097117C /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1C503F20FD8B7D0097117C /* EvilIcons.ttf */; };
 		FF1C507020FD8B7D0097117C /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1C504020FD8B7D0097117C /* SimpleLineIcons.ttf */; };
 		FF1C507120FD8B7D0097117C /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1C504120FD8B7D0097117C /* MaterialIcons.ttf */; };
+		FF1C52D92105E03F0097117C /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF1C52B22105E03F0097117C /* bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -375,6 +376,7 @@
 		FF1C503F20FD8B7D0097117C /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		FF1C504020FD8B7D0097117C /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		FF1C504120FD8B7D0097117C /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		FF1C52B22105E03F0097117C /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -602,6 +604,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				FF1C52B22105E03F0097117C /* bundle */,
 				FF1C503620FD8B7D0097117C /* Fonts */,
 				13B07FAE1A68108700A75B9A /* RNComponents */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -1080,6 +1083,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1C52D92105E03F0097117C /* bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				FF1C506F20FD8B7D0097117C /* EvilIcons.ttf in Resources */,
 				FF1C506B20FD8B7D0097117C /* Foundation.ttf in Resources */,
