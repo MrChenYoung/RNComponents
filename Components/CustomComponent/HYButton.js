@@ -49,9 +49,10 @@ export default class HYButton extends Component{
         [
           styles.containerStyle,
           this.props.extendStyle,
-          {backgroundColor:this.props.bgColor},
+          {backgroundColor:this.props.enabled ? this.props.bgColor : '#d8d8d8'},
           {width:this.props.width,height:this.props.height},
           {borderWidth:this.props.borderWidth,borderColor:this.props.borderColor,borderRadius:this.props.borderRadius},
+          {opacity:this.props.enabled ? 1 : 0.8}
           ]
       }
       disabled={!this.props.enabled}

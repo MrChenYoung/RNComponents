@@ -19,7 +19,9 @@ const datas = [
       {title:'LayoutAnimation'},
       {title:'NetInfo'},
       {title:'PixelRatio'},
+      {title:'Share'},
       {title:'StyleSheet'},
+      {title:'Timer'},
       {title:'Vibration'}
     ]
   },
@@ -121,6 +123,12 @@ export default class SystemAPI extends Component{
         break;
       case 'LayoutAnimation':
         component = 'LayoutAnimationPage';
+        break;
+      case 'Timer':
+        component = 'TimerPage';
+        break
+      case 'Share':
+        component = 'SharePage';
         break;
     }
 

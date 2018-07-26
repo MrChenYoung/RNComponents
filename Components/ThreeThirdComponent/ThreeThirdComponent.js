@@ -20,6 +20,10 @@ const datas = [
   {
     name:'react-native-vector-icons',
     detail:'iconfont图标库'
+  },
+  {
+    name:'react-timer-mixin',
+    detail:'定时器'
   }
 ];
 
@@ -45,6 +49,9 @@ export default class ThreeThirdComponent extends Component{
         break;
       case 'react-native-vector-icons':
         component = 'VectorIconsPage';
+        break;
+      case 'react-timer-mixin':
+        component = 'TimerMixinPage';
         break;
     }
 

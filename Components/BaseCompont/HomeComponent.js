@@ -67,6 +67,8 @@ import PixelRatioAPI from '../SystemAPI/PixelRatioAPI';
 import VibrationAPI from '../SystemAPI/VibrationAPI';
 import LinkingAPI from '../SystemAPI/LinkingAPI';
 import LayoutAnimationAPI from '../SystemAPI/LayoutAnimationAPI';
+import TimerAPI from '../SystemAPI/TimerAPI';
+import ShareAPI from '../SystemAPI/ShareAPI';
 
 // 系统库
 import MyStackNavigator from '../SystemLibrary/MyStackNavigator';
@@ -78,6 +80,7 @@ import MyDrawerNavigator from '../SystemLibrary/MyDrawerNavigator';
 import KeyboardAwareScrollView from '../ThreeThirdComponent/KeyboardAwareScrollView';
 import ReactnativeSwiper from '../ThreeThirdComponent/ReactnativeSwiper';
 import VectorIconsComponent from '../ThreeThirdComponent/VectorIconsComponent';
+import TimerMixinComponent from '../ThreeThirdComponent/TimerMixinComponent';
 
 // 其他
 import DeviceEventEmitterPageOne from '../Other/DeviceEventEmitterPageOne';
@@ -525,6 +528,24 @@ const StackNavigatorRouteConfig = {
     screen:LayoutAnimationAPI,
     navigationOptions:{
       headerTitle:'LayoutAnimation'
+    }
+  },
+  TimerPage:{
+    screen:TimerAPI,
+    navigationOptions:{
+      headerTitle:'Timer'
+    }
+  },
+  TimerMixinPage:{
+    screen:TimerMixinComponent,
+    navigationOptions:{
+      headerTitle:'react-timer-mixin'
+    }
+  },
+  SharePage:{
+    screen:ShareAPI,
+    navigationOptions:{
+      headerTitle:'Share'
     }
   }
 }
