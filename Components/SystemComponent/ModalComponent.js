@@ -25,7 +25,7 @@ export default class ModalExample extends Component {
           // 弹出动画类型 'none', 'slide', 'fade'
           animationType={"slide"}
 
-          // modal页面消失的时候调用(经测试好像没用)
+          // modal页面消失的时候调用(经测试好像没用) 安卓上返回按钮按下调用，且是必填项
           onRequestClose={() => {alert("modal消失")}}
 
           // modal页面显示以后调用
