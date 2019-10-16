@@ -18,6 +18,8 @@ import { StackNavigator } from 'react-navigation'
 
 // 首页扩展
 class HomePage extends Component{
+
+
   render(){
     return <HomeScreen
       extensionComponent={<View>
